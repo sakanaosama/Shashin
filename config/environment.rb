@@ -11,16 +11,13 @@ ActionMailer::Base.smtp_settings = {
 :port => '587',
 
 
+:authentication => :plain, #base64 encode 12:43:12 p.m. - Client: AUTH PLAIN ADEyMwAxMjM=
 
-# :user_name => ENV['SENDGRID_USERNAME'],
+:user_name => ENV['SENDGRID_USERNAME'],
 
-# :password => ENV['SENDGRID_PASSWORD'],
+:password => ENV['SENDGRID_PASSWORD'],
 
-# :authentication => :plain, #base64 encode 12:43:12 p.m. - Client: AUTH PLAIN ADEyMwAxMjM=
-# :user_name => "kinglegofish2710@gmail.com",
-# :password => "lyescenbhfednkrl",
-
-:domain => 'localhost:3000',
+:domain => 'shashin-app.herokuapp.com/',
 
 
 
