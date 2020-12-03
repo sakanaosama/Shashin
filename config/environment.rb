@@ -16,9 +16,9 @@ ActionMailer::Base.smtp_settings = {
 
 # :password => ENV['SENDGRID_PASSWORD'],
 
-:authentication => :plain, #base64 encode 12:43:12 p.m. - Client: AUTH PLAIN ADEyMwAxMjM=
-:user_name => "kinglegofish2710@gmail.com",
-:password => "lyescenbhfednkrl",
+# :authentication => :plain, #base64 encode 12:43:12 p.m. - Client: AUTH PLAIN ADEyMwAxMjM=
+# :user_name => "kinglegofish2710@gmail.com",
+# :password => "lyescenbhfednkrl",
 
 :domain => 'localhost:3000',
 
