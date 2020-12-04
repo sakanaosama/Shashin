@@ -14,7 +14,8 @@ ActionMailer::Base.smtp_settings = {
 
 
 :authentication => :plain, #base64 encode 12:43:12 p.m. - Client: AUTH PLAIN ADEyMwAxMjM=
-
+:user_name => "some@gmail.com",
+:password => "somepassword",
 
 
 :user_name => ENV['SENDGRID_USERNAME'],
@@ -23,17 +24,8 @@ ActionMailer::Base.smtp_settings = {
 
 # :authentication => :plain, #base64 encode 12:43:12 p.m. - Client: AUTH PLAIN ADEyMwAxMjM=
 
-:domain => 'shashin-app.herokuapp.com',
-# :domain => 'localhost',
-
-
-
-
-
-
-
-
+# :domain => 'shashin-app.herokuapp.com',
+:domain => 'localhost',
 :enable_starttls_auto => true
-
 
 }
