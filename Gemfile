@@ -27,8 +27,25 @@ gem 'devise'
 gem 'devise-bootstrap-views', '~> 1.0'
 gem 'jquery-rails'
 
+gem 'bootstrap'
 
 gem 'sendgrid-ruby'
+
+gem 'carrierwave'
+#https://github.com/carrierwaveuploader/carrierwave
+
+gem 'mini_magick'
+# https://github.com/minimagick/minimagick
+
+
+#gem 'fog'
+#https://github.com/fog/fog
+
+gem 'fog-google'
+
+gem 'rmagick'
+
+
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false

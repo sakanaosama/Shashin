@@ -1,0 +1,42 @@
+
+<%= form_with(model: image, local: true) do |form| %>
+
+
+  <% if image.errors.any? %>
+  
+    	<div class='alert alert-danger'>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+      <% image.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>		
+	</div>
+
+  <% end %>
+
+  <div class="form-group">
+     <%= form.label :name %>
+    <%= form.text_field :name, autofocus: true, autocomplete: 'name', class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :picture %>
+    <div class="custom-file">
+      <input type="file" class="custom-file-input" id="inputGroupFile02">
+      <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">!!! currently not working!!!</label>
+    </div>
+  </div>
+
+
+  <div class="form-group">
+    <%= form.label :picture %>
+      <%= form.file_field :picture, accept: 'image/jpeg, image/gif, image/png'%>
+  </div>
+
+
+
+  <div class="form-group">
+    <%= form.submit "Create Image", class: 'btn btn-primary' %>
+  </div>
+<% end %>
